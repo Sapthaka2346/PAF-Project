@@ -21,7 +21,7 @@ public class Hospital {
 		return con;
 	}
 
-	public String insertItem( String H_Name, String , String H_City,String H_phonenumber,String H_Desc) {
+	public String insertItem( String H_Name, String H_Address, String H_City,String H_phonenumber,String H_Desc) {
 		String output = "";
 		try {
 			Connection con = connect();
