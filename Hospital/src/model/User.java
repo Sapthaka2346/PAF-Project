@@ -122,7 +122,7 @@ public class User {
 		return output;
 	}
 
-	public String deleteItem(String Hospital_ID) {
+	public String deleteItem(String Ruser_ID) {
 		String output = "";
 		try {
 			Connection con = connect();
@@ -130,10 +130,10 @@ public class User {
 				return "Error while connecting to the database for deleting.";
 			}
 			// create a prepared statement
-			String query = "delete from reg_hospital where Hospital_ID=?";
+			String query = "delete from reg_user where Ruser_ID=?";
 			PreparedStatement preparedStmt = con.prepareStatement(query);
 			// binding values
-			preparedStmt.setInt(1, Integer.parseInt(Hospital_ID));
+			preparedStmt.setInt(1, Integer.parseInt(Ruser_ID));
 			// execute the statement
 			preparedStmt.execute();
 			con.close();
