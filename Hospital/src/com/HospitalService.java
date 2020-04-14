@@ -54,7 +54,7 @@ public class HospitalService {
 		String H_phonenumber = itemObject.get("H_phonenumber").getAsString();
 		String H_Desc = itemObject.get("H_Desc").getAsString();
 
-		String output = itemObj.updateItem(Hospital_ID, H_Name, H_Address, H_City, H_phonenumber,H_Desc);
+		String output = itemObj.updateItem(, H_Name, H_Address, H_City, H_phonenumber,H_Desc);
 
 		return output;
 	}
