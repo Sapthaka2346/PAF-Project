@@ -11,7 +11,7 @@ import org.jsoup.*;
 import org.jsoup.parser.*;
 import org.jsoup.nodes.Document;
 
-@Path("/Hospitalattributes")
+@Path("/Hospital")
 public class HospitalService {
 	Hospital itemObj = new Hospital();
 
