@@ -14,7 +14,7 @@ public class Hospital {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
 			// Provide the correct details: DBServer/DBName, username, password
-			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/paf", "root", "");
+			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/paf?useTimezone=true&serverTimezone=UTC", "root", "");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
