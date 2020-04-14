@@ -4,9 +4,13 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import model.User;
 
@@ -35,6 +39,26 @@ public class UserService {
 			) 
 	{
 		String output = itemObj.insertItem( Ruser_name, Ruser_address, Ruser_gender,Ruser_age,Ruser_notes);
+		return output;
+	}
+	
+	@PUT
+	@Path("/")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.TEXT_PLAIN)
+	public String updateItem(String itemData) { // Convert the input string to a JSON object
+		JsonObject itemObject = new JsonParser().parse(itemData).getAsJsonObject();
+
+		// Read the values from the JSON object
+		String Ruser_ID = itemObject.get("Ruser_ID").getAsString();
+		String Ruser_name = itemObject.get("Ruser_name").getAsString();
+		String Ruser_address = itemObject.get("Ruser_address").getAsString();
+		String Ruser_gender = itemObject.get("Ruser_gender").getAsString();
+		String Ruser_age = itemObject.get("Ruser_age").getAsString();
+		String Ruser_notes = itemObject.get("Ruser_notes").getAsString();
+
+		String output = itemObj.updateItem(Ruser_ID, Ruser_name, Ruser_address, Ruser_gender, Ruser_age,Ruser_notes);
+
 		return output;
 	}
 

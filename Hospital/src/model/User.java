@@ -94,7 +94,7 @@ public class User {
 		return output;
 	}
 
-	public String updateItem( String Hospital_ID ,String H_Name, String H_Address, String H_City,String H_phonenumber,String H_Desc) {
+	public String updateItem( String Ruser_ID ,String Ruser_name, String Ruser_address, String Ruser_gender,String Ruser_age,String Ruser_notes) {
 		String output = "";
 		try {
 			Connection con = connect();
@@ -102,15 +102,15 @@ public class User {
 				return "Error while connecting to the database for updating.";
 			}
 			// create a prepared statement
-			String query = "UPDATE reg_hospital SET H_Name=?,H_Address=?,H_City=?,H_phonenumber=?,H_Desc=? WHERE Hospital_ID=?";
+			String query = "UPDATE reg_user SET Ruser_name=?,Ruser_address=?,Ruser_gender=?,Ruser_age=?,Ruser_notes=? WHERE Ruser_ID=?";
 			PreparedStatement preparedStmt = con.prepareStatement(query);
 			// binding values
-			preparedStmt.setString(1, H_Name);
-			preparedStmt.setString(2, H_Address);
-			preparedStmt.setString(3, H_City);
-			preparedStmt.setString(4, H_phonenumber);
-			preparedStmt.setString(5, H_Desc);
-			preparedStmt.setInt(6,Integer.parseInt( Hospital_ID));
+			preparedStmt.setString(1, Ruser_name);
+			preparedStmt.setString(2, Ruser_address);
+			preparedStmt.setString(3, Ruser_gender);
+			preparedStmt.setString(4, Ruser_age);
+			preparedStmt.setString(5, Ruser_notes);
+			preparedStmt.setInt(6,Integer.parseInt( Ruser_ID));
 			// execute the statement
 			preparedStmt.execute();
 			con.close();
