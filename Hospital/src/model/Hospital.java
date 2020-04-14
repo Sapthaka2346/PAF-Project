@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class Item {
+public class Hospital {
 
 	private Connection connect() {
 		Connection con = null;

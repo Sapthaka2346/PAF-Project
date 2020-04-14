@@ -1,6 +1,6 @@
 package com;
 
-import model.Item;
+import model.Hospital;
 //For REST Service
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -12,8 +12,8 @@ import org.jsoup.parser.*;
 import org.jsoup.nodes.Document;
 
 @Path("/Hospitalattributes")
-public class Hospital {
-	Item itemObj = new Item();
+public class HospitalService {
+	Hospital itemObj = new Hospital();
 
 	@GET
 	@Path("/")
