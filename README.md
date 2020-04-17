@@ -1,2 +1,2 @@
 # PAF-Project
-All the web services are commited as sub modules.
+All the web services are committed as sub modules of th PAF Project.
