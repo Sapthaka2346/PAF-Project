@@ -1,2 +1,2 @@
 # PAF-Project
-//check
+All the services are commited as sub modules.
