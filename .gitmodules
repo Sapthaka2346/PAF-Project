@@ -1,3 +1,6 @@
 [submodule "Hos"]
 	path = Hos
 	url = https://github.com/Sapthaka2346/HospitalService.git
+[submodule "User"]
+	path = User
+	url = https://github.com/Dumindu98/UserService.git
