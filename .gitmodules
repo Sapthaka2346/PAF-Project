@@ -4,3 +4,6 @@
 [submodule "User"]
 	path = User
 	url = https://github.com/Dumindu98/UserService.git
+[submodule "HospitalService"]
+	path = HospitalService
+	url = https://github.com/Sapthaka2346/HospitalService.git
