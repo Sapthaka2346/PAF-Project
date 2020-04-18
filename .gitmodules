@@ -10,3 +10,6 @@
 [submodule "Doctor"]
 	path = Doctor
 	url = https://github.com/KasuniSenevirathne/Doctor_Service.git
+[submodule "Pharmacy"]
+	path = Pharmacy
+	url = https://github.com/AdeepaAkalanka/PharmacyService.git
