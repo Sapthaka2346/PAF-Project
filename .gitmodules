@@ -13,3 +13,6 @@
 [submodule "Pharmacy"]
 	path = Pharmacy
 	url = https://github.com/AdeepaAkalanka/PharmacyService.git
+[submodule "PaymentService"]
+	path = PaymentService
+	url = https://github.com/VihangaDias97/PaymentService.git
