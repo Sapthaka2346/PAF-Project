@@ -16,3 +16,6 @@
 [submodule "PaymentService"]
 	path = PaymentService
 	url = https://github.com/VihangaDias97/PaymentService.git
+[submodule "Appointment_Service"]
+	path = Appointment_Service
+	url = https://github.com/KaumadeeGunarathna/Appointment_Service.git
